@@ -1,11 +1,13 @@
 
-public class  Second {
-    public int f;
+public class Second {
+    public int number = 10;
 
-    public String print () {
+    public String printAndReturn() {
+        String result = String.format("---<%d>---", number);
+        System.out.println(result);
+        return result;
 
-    return String.format("---<%d>---",f);
     }
-    }
+}
 
 

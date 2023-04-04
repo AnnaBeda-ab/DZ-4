@@ -3,9 +3,10 @@ public class Main {
 
 
         Second secondA = new Second();
-        secondA.f = 6;
+        String updatedStr = secondA.printAndReturn();
+        updatedStr = updatedStr.replace("---","");
 
-       System.out.println(String.format("~~~<%s>~~~", secondA.print()));
+        System.out.println("~~~" + updatedStr + "\"~~~");
     }
 
 }
